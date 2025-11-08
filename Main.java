@@ -7,11 +7,11 @@ public class Main {
 
         // --- TEST ---
         System.out.println("Looking for specific user...");
-        User utente = service.findUserById(3);
+        User user = service.findUserById(3);
 
-        if (utente != null) { 
+        if (user != null) { 
             // TESTING BUG HERE BY ADDING/REMOVING METHOD CALL
-            System.out.println("User found: " + utente.getName());
+            System.out.println("User found: " + user.getName());
         } else {
             System.out.println("ERROR: User not found.");
         }
